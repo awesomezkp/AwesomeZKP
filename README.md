@@ -1,8 +1,9 @@
 # Technology Stack
 
+
 ## Primitives
   - FFT
-  	- [ ] [Fast Fourier Transforms](https://vitalik.ca/general/2019/05/12/fft.html)
+  	- [Vitalik] [Fast Fourier Transforms](https://vitalik.ca/general/2019/05/12/fft.html)
   - MSM
   	- [ ] [Multiscalar Multiplication: Strategies and Challenges](https://www.entropy1729.com/multiscalar-multiplication/)
   - Elliptic Curve Pairings
@@ -19,7 +20,11 @@
 
 ### SNARK
 - Gro 16
-- Plonk
+- Plonkish
+	- Plonk
+	- Plonky2
+	- 
+- 
 ### STARK
 - [STARK 101](https://starkware.co/stark-101/)
 - Anatomy of a STARK
@@ -39,3 +44,4 @@
 # Reference
 
 - https://github.com/ventali/awesome-zk
+- https://github.com/matter-labs/awesome-zero-knowledge-proofs

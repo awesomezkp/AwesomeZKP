@@ -1,6 +1,8 @@
 # Summary
 
 * [Welcome](README.md)
+* [关于 Mina](关于Mina/README.md)
+* [使用 Mina](使用Mina/README.md)
 * [zkApp开发](zkApp开发/README.md)
     * [概览](zkApp开发/概览.md)
     * [zkApps的工作原理](zkApp开发/zkApps的工作原理.md)
