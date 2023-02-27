@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "48d34f342c213016",
+        "id": "c11f65c2b2ee9d5a",
         "type": "tabs",
         "children": [
           {
-            "id": "5ecabe140ad8e44a",
+            "id": "12638dadd6922379",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -129,8 +129,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -148,32 +147,37 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5ecabe140ad8e44a",
+  "active": "12638dadd6922379",
   "lastOpenFiles": [
-    "assets/AwesomeZKP-Twitter Banner.png",
-    "assets/AwesomeZKP-Notion Cover.png",
-    "assets/AwesomeZKP.svg",
+    "assets/protocols/ingonyama_banner.jpg",
+    "assets/protocols/ingonyama_banner.jpg.crdownload",
+    "assets/protocols/ingonyama_logo.jpg",
+    "assets/protocols/espresso_banner.jpg",
+    "assets/protocols/espresso_banner.jpg.crdownload",
+    "assets/protocols/espresso_logo.jpg",
+    "assets/protocols/espresso_logo.jpg.crdownload",
+    "assets/technology/acceleration/pipezk.png",
+    "assets/technology/acceleration/cycloneMSM.png",
+    "assets/technology",
+    "assets/technology/acceleration",
     "README.md",
-    "Glossary.md",
-    "assets/wechat_account.jpg",
-    "assets/icon.png",
-    "assets/icon_white.svg",
-    "assets/tools/zkalc_banner.png",
-    "assets/tools/zkalc.png",
-    "assets/protocols/zksync_logo.jpg",
-    "assets/protocols/zksync_banner.jpeg",
-    "assets/tools",
-    "assets/protocols",
-    "assets",
-    "Assets/tools",
-    "Assets/protocols",
-    "Assets",
+    "technology/acceleration",
+    "assets/education/zk_whiteboard_sessions.png",
+    "popularizing/zk_landscape/Blockchain Capital 零知识证明开发人员指南.md",
     "protocols/Worldcoin/blogs/零知识机器学习（ZKML）介绍.md",
+    "Glossary.md",
+    "technology/proving_system",
+    "technology",
+    "education",
+    "popularizing",
+    "assets/education/applied_zk_learning_group.png",
+    "assets/education/zkp_mooc.png",
+    "assets/education/mit_icp_2023.png",
+    "technology/tools/zkalc.md",
+    "assets/AwesomeZKP-Twitter Banner.png",
     "protocols/Worldcoin/README.md",
     "img/zk-ml.md",
     "protocols/PSE/mirror_blog/UniRep协议.md",
-    "tools/zkalc.md",
-    "articles/zk_landscape/Blockchain Capital 零知识证明开发人员指南.md",
     "protocols/Mina/docs/zkApp开发/概览.md"
   ]
 }

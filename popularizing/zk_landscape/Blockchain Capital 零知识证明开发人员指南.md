@@ -4,7 +4,7 @@
 
 去年夏天，Vitalik 写了[一篇博客，概述了不同类型的 zkEVM](https://vitalik.ca/general/2022/08/04/zkevm.html)  （零知识以太坊虚拟机）。他根据性能和兼容性的权衡来定义它们。
 
-![zkEVMs](img/developer_guide_to_the_zkGalaxy_1.png)
+![zkEVMs](developer_guide_to_the_zkGalaxy_1.png)
 <center>Vitalik 在性能和兼容性之间对 zkEVM的分类</center>
 
 这是一种非常有启发性且实用的分类方法，可以用来区分 zkEVM 。但是，zkEVM 是构建零知识应用程序的一个子集。对于想要利用 zk 的独特性质（即 **简洁性、零知识和正确性** ）的程序员来说，zkEVM 可能不是最佳选择。通过展示所有的开发者工具，我希望提供一个指南，帮助你做出决策，为你的应用程序选择正确的 zk 堆栈。
@@ -19,7 +19,7 @@
 
 毫无疑问，这些原则同样适用于 zk 系统，并且这些抽象层现在正在变得足够成熟，zk 新手如今就可以开始使用它们并构建应用程序。
 
-![zkStack](img/developer_guide_to_the_zkGalaxy_2.png)
+![zkStack](developer_guide_to_the_zkGalaxy_2.png)
 
 <center>zk 堆栈在每一层的示例工具/技术</center>
 
@@ -67,7 +67,7 @@ zkApp 开发人员必须精通使用领域特定语言编写程序。其中一�
 
 [**Noir**](https://aztec.network/noir/)  – 受 Rust 启发的语法。围绕 IR 而不是语言本身构建，这意味着它可以有任意的前端。 
 
-![Aztec Noir Stack](img/developer_guide_to_the_zkGalaxy_3.png)
+![Aztec Noir Stack](developer_guide_to_the_zkGalaxy_3.png)
 
 <center>值得注意的是，Aztec Noir 编译堆栈具有模块化架构</center>
 
@@ -94,13 +94,13 @@ zkEVM 的主要目标是进行以太坊状态转换，并使用简洁的零知�
 
 所有这些之间的主要技术差异就在于语言堆栈中。将计算转换为在证明系统中可使用的形式（算术化）的位置。在某些 zkEVM 中，这发生在高级语言（Solidity、Vyper、Yul）这一层，而其他方案则试图在操作码级别证明 EVM。Vitalik 的博客中深入介绍了这些方案之间的权衡取舍，但我用一句话总结来说：堆栈中转换/算术化的层级越低，性能损失就越大。
 
-![zkEVMs](img/developer_guide_to_the_zkGalaxy_4.png)
+![zkEVMs](developer_guide_to_the_zkGalaxy_4.png)
 
 ### 为什么在 zk 中证明 EVM 操作码的成本很高？
 
 为虚拟机创建证明的主要挑战在于，电路的大小与每条指令的所有可能情况的规模大小呈线性关系。这种情况的原因是电路不知道每个程序会执行什么指令，所以它需要支持所有的指令。
 
-![Costs](img/developer_guide_to_the_zkGalaxy_5.png)
+![Costs](developer_guide_to_the_zkGalaxy_5.png)
 
 <center>在通用电路中，每条指令的成本与支持的所有指令的总和成正比</center>
 
@@ -110,7 +110,7 @@ zkEVM 的主要目标是进行以太坊状态转换，并使用简洁的零知�
 
 今天的 zkEVM 实现使用不同的策略来减轻这个问题的影响......例如，zkSync 将更昂贵的操作（主要是密码学的预编译，如哈希和 ECDSA）从主要的执行证明电路剥离到单独的电路中，这些电路最后通过 snark 递归与原电路聚合在一起。zkSync 在意识到他们的大部分成本来自一些复杂的指令后采用了这种方案。
 
-![Cost Structure](img/developer_guide_to_the_zkGalaxy_6.png)
+![Cost Structure](developer_guide_to_the_zkGalaxy_6.png)
 
 <center>交易成本主要取决于少数昂贵的操作</center>
 
@@ -144,7 +144,7 @@ zkSync 和 Scroll 之间的主要区别在于它们在堆栈中的何处/何时�
 
 ### 如何运行
 
-![proof_generation](img/developer_guide_to_the_zkGalaxy_7.png)
+![proof_generation](developer_guide_to_the_zkGalaxy_7.png)
 
 <center>zkLLVM 的架构草图</center>
 
@@ -179,7 +179,7 @@ zkVM 描述了所有 zk 虚拟机的超集，而 zkEVM 是一种特定类型的 
 
 ### Risc Zero
 
-![risc](img/developer_guide_to_the_zkGalaxy_8.png)
+![risc](developer_guide_to_the_zkGalaxy_8.png)
 
 Risc 零证明生成高层架构
 
@@ -195,7 +195,7 @@ RISC Zero 能够证明在 RISC-V 架构上执行的任何计算。RISC-V 是一�
 
 对于 RISC Zero，开发者编写 Rust 或 C++（最终是任何以 RISC-V 为目标的语言）。然后系统将编译期间生成的 ELF 文件用作 VM 电路的输入代码。开发人员只需调用 prove 即可返回 receipt（其中包含执行踪迹的 zk 证明）对象，任何人都可以从任何地方调用“verify”。从开发者的角度来看，无需了解 zk 的工作原理，底层系统会处理所有这些复杂性。
 
-![how](img/developer_guide_to_the_zkGalaxy_9.png)
+![how](developer_guide_to_the_zkGalaxy_9.png)
 
 **优点**
 
@@ -344,7 +344,7 @@ zk 处于多项技术的前沿，构建它需要对数学、密码学、计算�
 
 充满好奇的开发者，我希望我说服了你。你从今天开始就可以在你的应用程序中使用 zk。Happy Hacking !
 
-![conclusion](img/developer_guide_to_the_zkGalaxy_10.png)
+![conclusion](developer_guide_to_the_zkGalaxy_10.png)
 
 <center>还在等什么，快去构建 zk 应用吧！</center>
 
