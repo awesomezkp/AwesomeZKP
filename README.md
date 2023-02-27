@@ -1,21 +1,9 @@
-
-<html>
-<head>
-<link rel="stylesheet" href="https://kit.fontawesome.com/dee08a7b7f.css" crossorigin="anonymous">
-</head>
 <body>
-	<i class="fa-brands fa-twitter"></i>
 	<div align="center">
-	  <img alt="Awesome ZKP" src="https://pbs.twimg.com/profile_images/1621161994228502529/ngNjsoj-_400x400.jpg" width="100" style ="border-radius: 50%" >
-	<h1>Awesome ZKP</h1>
-	  <p align="center">
-	    <a href="https://github.com/sindresorhus/awesome">
-	      <img alt="awesome list badge" src="">
-	    </a>
-	  </p>
+	  <img src="assets/AwesomeZKP-Twitter%20Banner.png">
 	</div>
 </body>
-</html>
+
 
 # Technology Stack
 
