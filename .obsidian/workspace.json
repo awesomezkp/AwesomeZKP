@@ -13,38 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Glossary.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "83339599f4cc3b24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "protocols/Worldcoin/blogs/零知识机器学习（ZKML）介绍.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b70ba305ac607e94",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "protocols/Worldcoin/README.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309.5,
-    "collapsed": true
+    "width": 309.5
   },
   "right": {
     "id": "bea177a109f35841",
@@ -111,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "protocols/Worldcoin/blogs/零知识机器学习（ZKML）介绍.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "protocols/Worldcoin/blogs/零知识机器学习（ZKML）介绍.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "protocols/Worldcoin/blogs/零知识机器学习（ZKML）介绍.md"
+                "file": "README.md"
               }
             }
           }
@@ -165,26 +139,41 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:新建白板": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
-      "canvas:Create new canvas": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "83339599f4cc3b24",
+  "active": "5ecabe140ad8e44a",
   "lastOpenFiles": [
-    "img/zk-ml.md",
-    "protocols/Worldcoin/blogs/零知识机器学习（ZKML）介绍.md",
-    "protocols/PSE/mirror_blog/UniRep协议.md",
+    "assets/icon.png",
+    "README.md",
+    "assets/icon_white.svg",
+    "assets/AwesomeZKP.svg",
+    "assets/AwesomeZKP-Twitter Banner.png",
+    "assets/AwesomeZKP-Notion Cover.png",
+    "assets/tools/zkalc_banner.png",
+    "assets/tools/zkalc.png",
+    "assets/protocols/zksync_logo.jpg",
+    "assets/protocols/zksync_banner.jpeg",
+    "assets/protocols/worldcoin_logo.jpg",
+    "assets/tools",
+    "assets/protocols",
+    "assets",
+    "Assets/tools",
+    "Assets/protocols",
+    "Assets",
     "Glossary.md",
+    "protocols/Worldcoin/blogs/零知识机器学习（ZKML）介绍.md",
     "protocols/Worldcoin/README.md",
+    "img/zk-ml.md",
+    "protocols/PSE/mirror_blog/UniRep协议.md",
     "tools/zkalc.md",
     "articles/zk_landscape/Blockchain Capital 零知识证明开发人员指南.md",
-    "protocols/Mina/docs/zkApp开发/概览.md",
-    "articles/zk_landscape/img/developer_guide_to_the_zkGalaxy_9.png",
-    "articles/zk_landscape/img/developer_guide_to_the_zkGalaxy_10.png"
+    "protocols/Mina/docs/zkApp开发/概览.md"
   ]
 }
