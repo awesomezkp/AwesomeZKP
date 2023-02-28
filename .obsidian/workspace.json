@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c11f65c2b2ee9d5a",
+        "id": "08668dfd50bbe33d",
         "type": "tabs",
         "children": [
           {
-            "id": "12638dadd6922379",
+            "id": "e095a600951515aa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,8 +139,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "12638dadd6922379",
+  "active": "f47de3e98581f4c3",
   "lastOpenFiles": [
+    "README.md",
+    "Pasted image 20230227233356.png",
+    "Pasted.md",
+    "[Pasted.md",
+    "Pasted image 20230227233215.png",
+    "Pasted image 20230227233204.png",
+    "Pasted image 20230227233202.png",
     "assets/protocols/ingonyama_banner.jpg",
     "assets/protocols/ingonyama_banner.jpg.crdownload",
     "assets/protocols/ingonyama_logo.jpg",
@@ -160,9 +159,7 @@
     "assets/technology/acceleration/cycloneMSM.png",
     "assets/technology",
     "assets/technology/acceleration",
-    "README.md",
     "technology/acceleration",
-    "assets/education/zk_whiteboard_sessions.png",
     "popularizing/zk_landscape/Blockchain Capital 零知识证明开发人员指南.md",
     "protocols/Worldcoin/blogs/零知识机器学习（ZKML）介绍.md",
     "Glossary.md",
@@ -170,11 +167,7 @@
     "technology",
     "education",
     "popularizing",
-    "assets/education/applied_zk_learning_group.png",
-    "assets/education/zkp_mooc.png",
-    "assets/education/mit_icp_2023.png",
     "technology/tools/zkalc.md",
-    "assets/AwesomeZKP-Twitter Banner.png",
     "protocols/Worldcoin/README.md",
     "img/zk-ml.md",
     "protocols/PSE/mirror_blog/UniRep协议.md",
