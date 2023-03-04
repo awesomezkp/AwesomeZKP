@@ -134,6 +134,7 @@
 - Worldcoin
 - Espresso System
 - Ingonyama
+- Sovereign
 
 
 # Reference｜参考资料

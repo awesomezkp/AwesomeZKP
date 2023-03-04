@@ -11,11 +11,28 @@
             "id": "e095a600951515aa",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ac10ba2ea0c35184",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "protocols/Sovereign/Sovereign 介绍.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "protocols/Sovereign/Sovereign 介绍.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "protocols/Sovereign/Sovereign 介绍.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,10 +137,13 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "protocols/Sovereign/Sovereign 介绍.md"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -139,9 +161,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f47de3e98581f4c3",
+  "active": "ac10ba2ea0c35184",
   "lastOpenFiles": [
+    "protocols/Sovereign/Soverign SDK 工作原理.md",
     "README.md",
+    "protocols/Sovereign/Sovereign 介绍.md",
+    "protocols/Sovereign/img",
+    "protocols/Sovereign",
+    "assets/protocols/sovereign_banner.jpg",
+    "assets/protocols/sovereign_banner.jpg.crdownload",
+    "assets/protocols/sovereign_logo.jpg",
     "Pasted image 20230227233356.png",
     "Pasted.md",
     "[Pasted.md",
@@ -155,8 +184,6 @@
     "assets/protocols/espresso_banner.jpg.crdownload",
     "assets/protocols/espresso_logo.jpg",
     "assets/protocols/espresso_logo.jpg.crdownload",
-    "assets/technology/acceleration/pipezk.png",
-    "assets/technology/acceleration/cycloneMSM.png",
     "assets/technology",
     "assets/technology/acceleration",
     "technology/acceleration",
@@ -164,9 +191,6 @@
     "protocols/Worldcoin/blogs/零知识机器学习（ZKML）介绍.md",
     "Glossary.md",
     "technology/proving_system",
-    "technology",
-    "education",
-    "popularizing",
     "technology/tools/zkalc.md",
     "protocols/Worldcoin/README.md",
     "img/zk-ml.md",
