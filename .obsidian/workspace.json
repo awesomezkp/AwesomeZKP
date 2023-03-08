@@ -8,31 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e095a600951515aa",
+            "id": "ac10ba2ea0c35184",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "protocols/Sovereign/blogs/Sovereign 介绍.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ac10ba2ea0c35184",
+            "id": "012257e74d871d25",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "protocols/Sovereign/Sovereign 介绍.md",
+                "file": "protocols/Sovereign/blogs/Soverign SDK 工作原理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a13157c7a12bba24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "protocols/Sovereign/README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309.5
+    "width": 309.5,
+    "collapsed": true
   },
   "right": {
     "id": "bea177a109f35841",
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "protocols/Sovereign/Sovereign 介绍.md",
+                "file": "protocols/Sovereign/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "protocols/Sovereign/Sovereign 介绍.md",
+                "file": "protocols/Sovereign/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "protocols/Sovereign/Sovereign 介绍.md"
+                "file": "protocols/Sovereign/README.md"
               }
             }
           }
@@ -161,11 +174,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ac10ba2ea0c35184",
+  "active": "a13157c7a12bba24",
   "lastOpenFiles": [
-    "protocols/Sovereign/Soverign SDK 工作原理.md",
+    "protocols/Sovereign/blogs/Sovereign 介绍.md",
+    "protocols/Sovereign/blogs/Soverign SDK 工作原理.md",
+    "protocols/Sovereign/README.md",
+    "protocols/Sovereign/img/2-0.jpeg",
+    "protocols/Sovereign/img/1-0.jpeg",
+    "protocols/Sovereign/blogs",
     "README.md",
-    "protocols/Sovereign/Sovereign 介绍.md",
     "protocols/Sovereign/img",
     "protocols/Sovereign",
     "assets/protocols/sovereign_banner.jpg",
@@ -180,9 +197,7 @@
     "assets/protocols/ingonyama_banner.jpg",
     "assets/protocols/ingonyama_banner.jpg.crdownload",
     "assets/protocols/ingonyama_logo.jpg",
-    "assets/protocols/espresso_banner.jpg",
     "assets/protocols/espresso_banner.jpg.crdownload",
-    "assets/protocols/espresso_logo.jpg",
     "assets/protocols/espresso_logo.jpg.crdownload",
     "assets/technology",
     "assets/technology/acceleration",
@@ -190,7 +205,6 @@
     "popularizing/zk_landscape/Blockchain Capital 零知识证明开发人员指南.md",
     "protocols/Worldcoin/blogs/零知识机器学习（ZKML）介绍.md",
     "Glossary.md",
-    "technology/proving_system",
     "technology/tools/zkalc.md",
     "protocols/Worldcoin/README.md",
     "img/zk-ml.md",

@@ -1,4 +1,4 @@
-Sovereign 是一个开放互联的 [rollup](https://www.sovereign.xyz/learn) 生态。我们的目标是让所有开发人员能够部署**在任何区块链上都可以运行的**，**可互操作且可扩容的**的 rollup。这就是我们构建 Sovereign SDK 的原因，这是用于创建安全且可互操作的主权 zk-rollup 的最简单框架。
+Sovereign 是一个开放互联的 [rollup](https://www.sovereign.xyz/learn) 生态。我们的目标是让所有开发人员能够部署**在任何区块链上都可以运行的**，**可互操作且可扩容的**rollup。这就是我们构建 Sovereign SDK 的原因，这是用于创建安全且可互操作的主权 zk-rollup 的最简单框架。
 
 ## 当前的问题：区块链应用程序无法扩容
 

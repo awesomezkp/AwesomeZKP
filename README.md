@@ -16,6 +16,7 @@
 - [MIT IAP 2023](https://zkiap.com/)
 - [ZKP Mooc, Spring 2023](https://zk-learning.org/)
 - [Applied ZK Learning Group](https://learn.0xparc.org/)
+- [ZK Whiteboard Sessions]()
 
 
 # Technology Stacks｜技术栈
