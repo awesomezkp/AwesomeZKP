@@ -135,7 +135,8 @@
 - Worldcoin
 - Espresso System
 - Ingonyama
-- Sovereign
+- [Sovereign](./protocols/Sovereign/README.md)
+- [Renegade](./protocols/Renegade/README.md)
 
 
 # Reference｜参考资料

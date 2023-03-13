@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ac10ba2ea0c35184",
+            "id": "3c9db22318cfcf7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "protocols/Sovereign/README.md",
+                "file": "protocols/Renegade/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "protocols/Sovereign/README.md",
+                "file": "protocols/Renegade/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "protocols/Sovereign/README.md",
+                "file": "protocols/Renegade/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "protocols/Sovereign/README.md"
+                "file": "protocols/Renegade/README.md"
               }
             }
           }
@@ -149,12 +149,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ac10ba2ea0c35184",
+  "active": "3c9db22318cfcf7e",
   "lastOpenFiles": [
+    "README.md",
+    "protocols/Renegade/README.md",
+    "protocols/Renegade",
+    "protocols/Worldcoin/blogs/零知识机器学习（ZKML）介绍.md",
+    "protocols/Worldcoin/README.md",
+    "protocols/=nil; Foundation/README.md",
+    "protocols/Sovereign/README.md",
     "protocols/Sovereign/blogs/主权 ZK-Rollups 实现快速最终确认.md",
     "protocols/Sovereign/blogs/Soverign SDK 工作原理.md",
     "protocols/Sovereign/blogs/Sovereign 介绍.md",
-    "protocols/Sovereign/README.md",
     "protocols/Sovereign/img/3-0.png",
     "protocols/Sovereign/img/0-1.png",
     "protocols/Sovereign/img/1-1.png",
@@ -163,7 +169,6 @@
     "protocols/Sovereign/img/2-0.jpeg",
     "protocols/Sovereign/img/1-0.jpeg",
     "protocols/Sovereign/blogs",
-    "README.md",
     "protocols/Sovereign/img",
     "protocols/Sovereign",
     "assets/protocols/sovereign_banner.jpg",
@@ -177,12 +182,9 @@
     "assets/protocols/espresso_logo.jpg.crdownload",
     "assets/technology",
     "assets/technology/acceleration",
-    "technology/acceleration",
     "popularizing/zk_landscape/Blockchain Capital 零知识证明开发人员指南.md",
-    "protocols/Worldcoin/blogs/零知识机器学习（ZKML）介绍.md",
     "Glossary.md",
     "technology/tools/zkalc.md",
-    "protocols/Worldcoin/README.md",
     "img/zk-ml.md",
     "protocols/PSE/mirror_blog/UniRep协议.md",
     "protocols/Mina/docs/zkApp开发/概览.md"
