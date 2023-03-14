@@ -1,7 +1,5 @@
-- 全面的交易隐私
-- 结合多方计算 （MPC）和零知识证明（ZKP），多方计算决定交易的匹配，零知识证明用来结算匹配后的交易。通过 collaborative SNARKs 实现 MPC-ZKP的架构，Renegade 实现了原子化和交易前后完全隐私的去中心化交易所。
-- 做到端到端加密的交易所，暗池
-- 共识和安全性依托于Starknet，节点和订单匹配依赖于自身的p2p网络
+
+>Renegade 结合了多方计算 （MPC）和零知识证明（ZKP），其中多方计算用于撮合交易，零知识证明用来结算撮合后的交易。利用collaborative SNARKs 实现的 MPC-ZKP 的架构，Renegade 实现了原子化和交易前后默认完全隐私的去中心化交易所。当交易者需要更低的交易延迟时，Renegade也可以暴露部分交易信息加快撮合，并利用零知识证明确保交易提示的正确性。Renegade 的共识和安全性依托于Starknet，节点和订单匹配依赖于自身的p2p网络。
 
 
 ## 基本概念
@@ -14,7 +12,7 @@
 - 跨交易所的套利：流动性割裂带来的，交易割裂，从而带来交易所间的套利机会
 - 统计套利：对TWAP等下单模式进行分析，套利机器人进行套利
 在链上合约的背景下，信息暴露问题更为严重，通过归档节点，任何人可以知晓过去的交易状态，通过内存池，任何人可以知道交易成功后的未来状态。
-而在暗池交易模式下，交易者无法知晓其他人的挂单信息，只能知道自己的订单和成交情况。对于交易量大的巨鲸，需求尤为强烈。
+而在暗池交易模式下，交易者无法知晓其他人的挂单信息，只能知道自己的订单和成交情况。对于交易量大的巨鲸，需求尤为强烈。Renegade希望实现的是交易前后的隐私和最小化的MEV。
 
 ### 什么是多方计算（MPC）
 
@@ -31,12 +29,41 @@
 中继器（Relayer）是 Renegade 的节点，每个中继器管理一到多个钱包，负责和其他中继器进行多方计算。集群（Cluster）是管理相同钱包的中继器群。公共网关（Public Gateway）是特殊的中继器集群，可供不跑节点的群体使用。
 当一笔交易进入中继器，中继器会传送 handshake 元组，包含对订单数据的承诺和相应的零知识证明。其他所有中继器会监听网络中的 handshake 元组，并通过MPC计算匹配引擎。
 
-## Collaborative zk-SNARKs
-Renegade 使用了 Ozdemir and Boneh 最新[collaborative SNARK](https://eprint.iacr.org/2021/1530) 研究成果，将零知识证明生成打包进了 MPC 的算法当中，使得中继器们可以合作证明一个 NP 问题。
+### Collaborative zk-SNARKs
+Renegade 使用了 Ozdemir and Boneh 最新[collaborative SNARK](https://eprint.iacr.org/2021/1530) 研究成果，将零知识证明生成打包进了 MPC 的算法当中，使得中继器们可以合作证明一个 NP 问题。证明系统方面采用了对于 collaborative proving 友好的 Bulletproofs。
 当合作生成的证明产生后，任意方都可以递交到链上的智能合约，从而完成实际的代币交换。
+
+## 密钥体系
+在 MPC-ZKP 架构中，所有的交易者都依赖运行 MPC 的中继器完成订单的撮合。因此交易者和中继器存在一定的信任关系，因为中继器需要撮合和结算订单，必须能够查看钱包从而进行订单计算。当然交易者可以自己运行中继器，或者依赖于公共中继器。
+
+因此 Renegade 构建了一套钱包的密钥体系，来约束钱包委托中继器过程中的权限关系。体系上一层的密钥可以衍生出下一层的密钥。顶层是ETH的原生的密钥对，依次衍生出根密钥对 (root keypair)，撮合密钥 (match keypair)，结算密钥对 (settle keypair)，查看密钥对(view keypair)。根密钥对拥有钱包的全部授权，包括任意的转账，取现，更新和取消订单；撮合密钥对可以撮合现有的订单；结算密钥对可以结算之前的撮合订单，或者结算暗池中的转账；查看密钥对仅可以查看未加密的钱包，但没有办法进行任何操作。
+
+结合这套密钥体系，交易者如果使用其他人的中继器，则需要将发送撮合密钥对发送给中继器，中继器来进行撮合，结算交易，但无法发送新的订单或者取消之前的订单，并且需要支付一定费用给中继器。若是使用自己的中继器，交易者可以沿用上述的交易模式，或者是直接将根密钥发送给中继器，在super-relay模式下运行，此时中继器可以直接下单和取消订单。对于交易延迟和手续费敏感的交易者，super-relay模式可以提供挂单的零延迟和零费用。
+
+
+## 协议收入
+- Renegade 创建一个新钱包的Gas费大约为 10 USD，每一个笔存款，提款和转账操作的 Gas 费大约为 1 USD。交易的挂单方面，除了super-relay模式，下单和取消订单都需要消耗大约 1 USD的 Gas 费。
+- Renegade对于每笔成功匹配的订单，收取 0.02% 的协议手续费。公共中继器将收取额外的 0.08% 的协议手续费。
+
+## 治理
+- Renegade 寻求治理最小化，所有合约在部署后都不可更改。但会有一个 2/3 的开发者多签有如下的权限：
+	- 更改布尔标记，拒绝所有有效撮合的证明，暂停所有撮合，应对可能的漏洞攻击
+	- 更改布尔标记，暂停所有存款，同样应对可能的漏洞攻击
+	- 更改全局的协议费用，协议费用的变动区间在 0~0.02%
+	- 更改协议费用接受的公钥
+	- 委托上述的权限给新的地址，或是完全更改权限的地址
 
 
 ## Fundraising | 融资
 
 ### 种子轮
 - 融资 340 万美元，由 Dragonfly 和 Naval 领投，包括其他天使投资人：[Balaji Srinivasan](https://twitter.com/balajis) (Coinbase), [Tarun Chitra](https://twitter.com/tarunchitra) (Gauntlet), [Marc Bhargava](https://twitter.com/marcbhargava) (Tagomi), [Lily Liu](https://twitter.com/calilyliu) (Osmosis, Solana), and [Lev Livnev](https://lev.liv.nev.org.uk/) (Symbolic Capital Partners)
+
+
+
+## 密码学堆栈
+- Bulletproof
+- SPDZ MPC
+- Poseidon Hash
+- ElGamal
+
