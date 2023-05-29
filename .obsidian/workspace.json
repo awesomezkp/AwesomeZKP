@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "08668dfd50bbe33d",
+        "id": "729f3b9e17c3a26e",
         "type": "tabs",
         "children": [
           {
-            "id": "3c9db22318cfcf7e",
+            "id": "707dfcecac43dea7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "protocols/Renegade/README.md",
+                "file": "protocols/Mina/Cohort 1 Presentation.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "faucet",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -64,12 +64,20 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "bcfec5a521759805",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 309.5,
+    "width": 265.5,
     "collapsed": true
   },
   "right": {
@@ -86,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "protocols/Renegade/README.md",
+                "file": "protocols/Mina/Cohort 1 Presentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "protocols/Renegade/README.md",
+                "file": "protocols/Mina/Cohort 1 Presentation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "protocols/Renegade/README.md"
+                "file": "protocols/Mina/Cohort 1 Presentation.md"
               }
             }
           }
@@ -149,8 +157,40 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3c9db22318cfcf7e",
+  "active": "707dfcecac43dea7",
   "lastOpenFiles": [
+    "protocols/=nil; Foundation/1. =nil; Foundation.md",
+    "protocols/Mina/Cohort 1 Presentation.md",
+    "protocols/=nil; Foundation/README.md",
+    "protocols/=nil; Foundation/2.在EVM内验证Mina的完整状态.md",
+    "protocols/=nil; Foundation/8. =nil;无需信任的数据管理.md",
+    "protocols/=nil; Foundation/13. =nil;的证明市场桥接Mina和Ethereum.md",
+    "protocols/=nil; Foundation/12. =nil;的证明市场.md",
+    "protocols/=nil; Foundation/3. 在EVM内Solana轻节点状态.md",
+    "README.md",
+    "protocols/Radius/README.md",
+    "protocols/Radius",
+    "protocols/Mina/docs/zkApp开发/概览.md",
+    "Glossary.md",
+    "protocols/Mina/docs/SUMMARY.md",
+    "protocols/Mina/docs/zkApp开发/如何编写zkApp.md",
+    "protocols/Mina/docs/zkApp开发/zkApps的工作原理.md",
+    "protocols/Mina/docs/使用Mina/Ledger 硬件钱包.md",
+    "protocols/Mina/docs/使用Mina/如何委托.md",
+    "protocols/Mina/docs/使用Mina/如何转账和收款.md",
+    "使用Mina/Ledger.md",
+    "protocols/Mina/docs/使用Mina/Ledger%20硬件钱包.md",
+    "使用Mina",
+    "protocols/Mina/docs/使用Mina/安装钱包.md",
+    "protocols/Mina/docs/关于Mina/常见问题.md",
+    "protocols/Mina/docs/关于Mina/共识.md",
+    "protocols/Mina/docs/关于Mina/概览.md",
+    "protocols/Mina/docs/关于Mina/协议架构.md",
+    "protocols/Mina/docs/关于Mina/什么是零知识证明.md",
+    "protocols/Mina/docs/zkApp开发/SnarkyJS参考资料/类",
+    "protocols/Mina/docs/zkApp开发/SnarkyJS参考资料/模块",
+    "protocols/Mina/docs/zkApp开发/SnarkyJS参考资料/接口",
+    "protocols/Mina/docs/zkApp开发/SnarkyJS参考资料",
     "protocols/Renegade/img/zkp.png",
     "protocols/Renegade/img/network_architecture.png",
     "protocols/Renegade/img/commit_reveal.png",
@@ -158,36 +198,12 @@
     "protocols/Renegade/img/mpc.png",
     "protocols/Renegade/img/key_hierarchy.png",
     "protocols/Renegade/img",
-    "README.md",
-    "protocols/Renegade/README.md",
     "protocols/Renegade",
-    "protocols/Worldcoin/blogs/零知识机器学习（ZKML）介绍.md",
-    "protocols/Worldcoin/README.md",
-    "protocols/=nil; Foundation/README.md",
-    "protocols/Sovereign/README.md",
-    "protocols/Sovereign/blogs/主权 ZK-Rollups 实现快速最终确认.md",
-    "protocols/Sovereign/blogs/Soverign SDK 工作原理.md",
-    "protocols/Sovereign/blogs/Sovereign 介绍.md",
     "protocols/Sovereign/img/3-0.png",
     "protocols/Sovereign/img/0-1.png",
     "protocols/Sovereign/img/1-1.png",
     "protocols/Sovereign/img/1-1.jpeg",
-    "protocols/Sovereign/img/0-0.jpeg",
     "protocols/Sovereign/blogs",
-    "protocols/Sovereign/img",
-    "protocols/Sovereign",
-    "assets/protocols/sovereign_banner.jpg.crdownload",
-    "Pasted.md",
-    "[Pasted.md",
-    "assets/protocols/ingonyama_banner.jpg.crdownload",
-    "assets/protocols/espresso_banner.jpg.crdownload",
-    "assets/protocols/espresso_logo.jpg.crdownload",
-    "assets/technology",
-    "popularizing/zk_landscape/Blockchain Capital 零知识证明开发人员指南.md",
-    "Glossary.md",
-    "technology/tools/zkalc.md",
-    "img/zk-ml.md",
-    "protocols/PSE/mirror_blog/UniRep协议.md",
-    "protocols/Mina/docs/zkApp开发/概览.md"
+    "protocols/Sovereign/img"
   ]
 }

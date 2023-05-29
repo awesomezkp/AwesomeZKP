@@ -137,6 +137,7 @@
 - Ingonyama
 - [Sovereign](./protocols/Sovereign/README.md)
 - [Renegade](./protocols/Renegade/README.md)
+- [Radius](./protocols/Radius/README.md)
 
 
 # Reference｜参考资料

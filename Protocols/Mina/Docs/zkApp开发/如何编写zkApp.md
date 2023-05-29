@@ -1,3 +1,6 @@
+**信息**
+请注意，Mina Mainnet 上尚未提供 zkApp 可编程性，但现在可以将 zkApps 部署到 Berkeley Testnet。
+
 # 如何编写zkApp
 
 zkApp 由智能合约和与之交互的 UI 组成。首先，我们将安装 Mina zkApp CLI 并编写智能合约。
@@ -6,44 +9,42 @@ zkApp 由智能合约和与之交互的 UI 组成。首先，我们将安装 Min
 
 您的智能合约将使用[Mina zkApp CLI](https://www.npmjs.com/package/zkapp-cli/)编写。
 
-[Mina zkApp CLI 通过提供包括 SnarkyJS、测试框架 ( Jest](https://jestjs.io/) )、代码自动格式化 ( [Prettier](https://prettier.io/) )、代码检查 ( [ES Lint](https://eslint.org/) )等依赖项的项目脚手架，可以轻松遵循推荐的最佳实践。
+Mina zkApp CLI 通过提供包括 SnarkyJS、测试框架 ( [Jest](https://jestjs.io/) )、代码自动格式化 ( [Prettier](https://prettier.io/) )、代码检查 ( [ES Lint](https://eslint.org/) )等依赖项的项目脚手架，可以轻松遵循推荐的最佳实践。
 
-### 安装 Mina zkApp [CLI](https://docs.minaprotocol.com/zkapps/how-to-write-a-zkapp#install-mina-zkapp-cli)
-
+### 安装 Mina zkApp CLI
 ```sh
 npm install -g zkapp-cli
 ```
 
-#### 依赖项[：](https://docs.minaprotocol.com/zkapps/how-to-write-a-zkapp#dependencies)
+#### 依赖项：
 
 - NodeJS 16+（或 14 使用`node --experimental-wasm-threads`）
 - NPM 6+
-- 盖特 2+
+- Git 2+
 
-提示
+**提示**
 
 如果您安装了旧版本，我们建议使用适用于您系统的包管理器安装更新版本：[Homebrew](https://brew.sh/) (Mac)、[Chocolatey](https://chocolatey.org/) (Windows) 或 apt/yum/etc (Linux)。在 Linux 上，您可能需要按照 NodeJS项目的建议，通过 NodeSource（ [deb](https://github.com/nodesource/distributions#debinstall)或[rpm ）安装最新的 NodeJS 版本。](https://github.com/nodesource/distributions#rpminstall)
 
-### 开始一个[项目](https://docs.minaprotocol.com/zkapps/how-to-write-a-zkapp#start-a-project)
+### 开始一个项目
 
 现在你已经安装了 Mina zkApp CLI，你可以从一个例子开始或者开始你自己的项目。
 
-#### 选项 A：从示例开始（推荐[）](https://docs.minaprotocol.com/zkapps/how-to-write-a-zkapp#option-a-start-with-an-example-recommended)
-
+#### 选项 A：从示例开始（推荐）
 示例基于标准项目结构，但`/src`目录中的附加文件是唯一的区别。
 
-1. **安装：**运行`zk example sudoku`。这将创建一个新项目并在项目目录中包含示例文件（即智能合约）`src/` 。键入`ls`并按 Enter 以查看创建的文件或在代码编辑器（例如 VS Code）中打开目录。
-2. **运行测试：**运行`npm run test`. 测试是使用[Jest](https://jestjs.io/)编写的。运行此命令后，您应该会看到所有测试都通过了。您还可以运行`npm run testw`以在监视模式下运行测试，因此它会在保存对代码的更改时自动重新运行测试。
-3. **构建示例：**运行`npm run build`. 这会将您的 TypeScript 编译成项目`/build`目录中的 JavaScript。
+1. **安装：** 运行`zk example sudoku`。这将创建一个新项目并在项目目录中包含示例文件（即智能合约）`src/` 。键入`ls`并按 Enter 以查看创建的文件或在代码编辑器（例如 VS Code）中打开目录。
+2. **运行测试：** 运行`npm run test`. 测试是使用[Jest](https://jestjs.io/)编写的。运行此命令后，您应该会看到所有测试都通过了。您还可以运行`npm run testw`以在监视模式下运行测试，因此它会在保存对代码的更改时自动重新运行测试。
+3. **构建示例：** 运行`npm run build`. 这会将您的 TypeScript 编译成项目`/build`目录中的 JavaScript。
 4. **Deploy to Testnet:** Run `zk config`，这将引导您将网络别名添加到项目的`config.json`. 对于 Berkeley Testnet，我们建议使用`berkeley`作为名称、`0.1`费用和 `https://proxy.berkeley.minaexplorer.com/graphql`url。然后运行`zk deploy`并按照提示操作。有关详细信息，请参阅[如何部署 zkApp](https://docs.minaprotocol.com/zkapps/how-to-deploy-a-zkapp)页面。
 
 您可以[在此处查看所有可用示例](https://github.com/o1-labs/zkapp-cli/tree/main/examples/)的列表。
 
 #### 选项 B：开始您自己的[项目](https://docs.minaprotocol.com/zkapps/how-to-write-a-zkapp#option-b-start-your-own-project)
 
-1. **安装：**运行`zk project <myproj>`。键入`ls`并按回车键以查看新创建的项目结构。
-2. **运行测试：**运行`npm run test`. 测试是使用[Jest](https://jestjs.io/)编写的。运行此命令后，您应该会看到所有测试都通过了。您还可以运行`npm run testw`以在监视模式下运行测试，因此它会在保存对代码的更改时自动重新运行测试。
-3. **构建：**运行`npm run build`。这会将您的 TypeScript 代码编译成项目中的 JavaScript `/build`。
+1. **安装：** 运行`zk project <myproj>`。键入`ls`并按回车键以查看新创建的项目结构。
+2. **运行测试：** 运行`npm run test`. 测试是使用[Jest](https://jestjs.io/)编写的。运行此命令后，您应该会看到所有测试都通过了。您还可以运行`npm run testw`以在监视模式下运行测试，因此它会在保存对代码的更改时自动重新运行测试。
+3. **构建：** 运行`npm run build`。这会将您的 TypeScript 代码编译成项目中的 JavaScript `/build`。
 4. **Deploy to Testnet:** Run `zk config`，这将引导您将网络别名添加到项目的`config.json`. 对于 Berkeley Testnet，我们建议使用`berkeley`作为名称、`0.1`费用和 `https://proxy.berkeley.minaexplorer.com/graphql`url。然后运行`zk deploy`并按照提示操作。有关详细信息，请参阅[如何部署 zkApp](https://docs.minaprotocol.com/zkapps/how-to-deploy-a-zkapp)页面。
 5. **部署到主网：（**即将推出。）
 
@@ -61,9 +62,9 @@ zkApps 是使用 SnarkyJS 用 TypeScript 编写的。SnarkyJS 是一个 TypeScri
 
 ##### [概念](https://docs.minaprotocol.com/zkapps/how-to-write-a-zkapp#concepts)
 
-字段元素是零知识证明编程中数据的基本单位。每个字段元素最多可以存储一个 256 位大小的数字。您可以将其视为 Solidity 中的 uint256。
+域元素是零知识证明编程中数据的基本单位。每个域元素最多可以存储一个 256 位大小的数字。您可以将其视为 Solidity 中的 uint256。
 
-笔记
+**注意**
 
 对于密码倾斜，一个字段可以存储的确切最大值是：28,948,022,309,329,048,855,892,746,252,171,976,963,363,056,481,941,560,715,954,676,764,349,967,630,336
 
